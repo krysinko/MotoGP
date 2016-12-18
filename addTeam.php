@@ -21,7 +21,7 @@
 </head>
 <body>
 <div class="row">
-    <div class="col-xs-12 basicMargin">
+    <div class="col-xs-10 col-md-offset-1">
         <br>
         <?php
         $serverName = "localhost";
@@ -55,7 +55,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-12 basicMargin">
+    <div class="col-xs-10 col-xs-offset-1">
         <div class="inputDiv">
            <span>
             Team name:
@@ -84,7 +84,7 @@
             </select>
         </div>
         <div>
-            <a class="btn btn-default" href="addRider.php" role="button">Add rider</a>
+            <input class="btn btn-default" type="submit" value="Add team">
         </div>
 
     </div>
