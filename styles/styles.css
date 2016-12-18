@@ -1,0 +1,17 @@
+.basicMargin {
+    margin: 100px;
+}
+
+.inputDiv{
+    padding: 5px 0 5px 0;
+}
+
+.inputDiv span {
+    width: 150px;
+    display: inline-block;
+}
+
+.inputDiv input, .inputDiv select {
+    width: 150px;
+    height: 27px;
+}
