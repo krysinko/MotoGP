@@ -2,11 +2,10 @@
 $serverName = "localhost";
 $username = "root";
 $password = "";
-$dbName = "MotoGP";
+$dbName = "motogp";
 
-// Create connection
+
 $conn = new mysqli($serverName, $username, $password, $dbName);
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -17,17 +16,18 @@ if ($conn->connect_error) {
 //$isFactory = isset($_POST['isFactory'])?$_POST['isFactory']:'null';
 
 
-$teamName = "honda";
-$rider1 = "dp";
-$rider2 = "mm";
-$isFactory = 1;
+$teamName = "yamaha";
+$riderName = "rossi";
+$number = 46;
+$country = "italy";
+$category = "motogp";
 
-$sql = "INSERT INTO teams (teamName, Rider1, Rider2, isFactory) VALUES ( '$teamName', '$rider1', '$rider2','$isFactory')";
+$sql = "INSERT INTO riders (Team, Name, Number, Country, Category) VALUES ( '$teamName', '$riderName', '$number','$country', '$category')";
 echo($sql);
 if (!mysqli_query( $conn,$sql ))
 {
-    echo("Error description: " . mysqli_error($conn));
-}else echo "dobrze jest";
+    echo("<br>Error description: " . mysqli_error($conn));
+}else echo "<br>dobrze jest";
 
 
 

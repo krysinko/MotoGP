@@ -18,8 +18,8 @@
 <body>
 <div class="row">
     <div class="col-xs-12 basicMargin">
-        <a class="btn btn-default" href="teams.php" role="button">Teams</a>
-        <a class="btn btn-default" href="riders.php" role="button">Riders</a>
+        <a class="btn btn-default" href="teams/teams.php" role="button">Teams</a>
+        <a class="btn btn-default" href="riders/riders.php" role="button">Riders</a>
 
 
     </div>
