@@ -21,14 +21,14 @@
                 Rider1
            </span>
 
-                <input name="rider1" type="text" list="riders" id="rider1">
+                <input name="rider1" list="riders" id="rider1">
                 <?php include("../riders/chooseRider.php"); ?>
             </div>
             <div class="inputDiv">
            <span>
                 Rider2
            </span>
-                <input name="rider2" type="text" list="riders" id="rider2">
+                <input name="rider2" list="riders" id="rider2">
                 <?php include("../riders/chooseRider.php"); ?>
             </div>
             <div class="inputDiv">
