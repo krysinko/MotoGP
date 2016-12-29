@@ -16,10 +16,6 @@ $rider1 = isset($_POST['rider1'])?$_POST['rider1']:'null';
 $rider2 = isset($_POST['rider2'])?$_POST['rider2']:'null';
 $isFactory = isset($_POST['isFactory'])?$_POST['isFactory']:'null';
 
-$error = array();
-if ( $rider1 != '' && ($rider1 == $rider2)) {
-    $error = "Rider1 is the same as Rider2!";
-}
 //
 //$teamName = "honda";
 //$rider1 = "dp";

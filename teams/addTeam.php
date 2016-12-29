@@ -1,4 +1,8 @@
+
 <?php include("../header.php"); ?>
+<head>
+    <script src="../scripts/checkRidersName.js"></script>
+</head>
 
 <div class="row">
     <div class="col-xs-10 col-md-offset-1">
@@ -21,14 +25,14 @@
                 Rider1
            </span>
 
-                <input name="rider1" list="riders" id="rider1">
+                <input name="rider1" list="riders" id="rider1" onchange="checkRidersName()" oninput="this.onchange()">
                 <?php include("../riders/chooseRider.php"); ?>
             </div>
             <div class="inputDiv">
            <span>
                 Rider2
            </span>
-                <input name="rider2" list="riders" id="rider2">
+                <input name="rider2" list="riders" id="rider2" onchange="checkRidersName()" oninput="this.onchange()">
                 <?php include("../riders/chooseRider.php"); ?>
             </div>
             <div class="inputDiv">
