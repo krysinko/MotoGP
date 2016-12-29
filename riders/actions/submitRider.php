@@ -16,11 +16,11 @@ if ($conn->connect_error) {
 //$isFactory = isset($_POST['isFactory'])?$_POST['isFactory']:'null';
 
 
-$teamName = "yamaha";
-$riderName = "rossi";
-$number = 46;
-$country = "italy";
-$category = "motogp";
+$teamName = isset($_POST['team'])?$_POST['team']:'null';
+$riderName = isset($_POST['name'])?$_POST['name']:'null';
+$number = isset($_POST['number'])?$_POST['number']:'null';
+$country = isset($_POST['country'])?$_POST['country']:'null';
+$category = isset($_POST['category'])?$_POST['category']:'null';
 
 $sql = "INSERT INTO riders (Team, Name, Number, Country, Category) VALUES ( '$teamName', '$riderName', '$number','$country', '$category')";
 echo($sql);

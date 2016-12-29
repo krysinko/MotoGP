@@ -45,7 +45,7 @@
                 </select>
             </div>
             <div>
-                <input class="btn btn-default" type="submit" value="Add team">
+                <input class="btn btn-default" type="submit" value="Add rider">
             </div>
         </form>
     </div>
