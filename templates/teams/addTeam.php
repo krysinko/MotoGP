@@ -1,19 +1,19 @@
 
-<?php include("../header.php"); ?>
+<?php include("../../view/header.php"); ?>
 <head>
-    <script src="../scripts/checkRidersName.js"></script>
+    <script src="../../scripts/checkRidersName.js"></script>
 </head>
 
 <div class="row">
     <div class="col-xs-10 col-md-offset-1">
         <br>
-        <?php include 'actions/showTeam.php'; ?>
+        <?php include '../../controllers/teams/showTeam.php'; ?>
     </div>
 </div>
 
 <div class="row">
     <div class="col-xs-10 col-xs-offset-1">
-        <form action="actions/submitTeam.php" method="post">
+        <form action="../../controllers/teams/submitTeam.php" method="post">
             <div class="inputDiv">
            <span>
             Team name:
@@ -26,14 +26,14 @@
            </span>
 
                 <input name="rider1" list="riders" id="rider1" onchange="checkRidersName()">
-                <?php include("../riders/chooseRider.php"); ?>
+                <?php include("../../controllers/riders/chooseRider.php"); ?>
             </div>
             <div class="inputDiv">
            <span>
                 Rider2
            </span>
                 <input name="rider2" list="riders" id="rider2" onchange="checkRidersName()">
-                <?php include("../riders/chooseRider.php"); ?>
+                <?php include("../../controllers/riders/chooseRider.php"); ?>
             </div>
             <div class="inputDiv">
            <span>
@@ -51,4 +51,4 @@
     </div>
 </div>
 
-<?php include("../footer.php"); ?>
+<?php include("../../view/footer.php"); ?>

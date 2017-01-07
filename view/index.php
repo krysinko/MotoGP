@@ -1,8 +1,8 @@
 <html>
 <head>
     <title>MotoGP world</title>
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="icon" type="image/png" href="../images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -20,7 +20,9 @@
     <div class="col-xs-12 basicMargin">
         <a class="btn btn-default" href="teams/teams.php" role="button">Teams</a>
         <a class="btn btn-default" href="riders/riders.php" role="button">Riders</a>
-
+        <a class="btn btn-default" href="worldchampion/worldchampion.php" role="button">World championship</a>
+        <a class="btn btn-default" href="tracks/tracks.php" role="button">Tracks</a>
+        <a class="btn btn-default" href="race/race.php" role="button">Races</a>
 
     </div>
 </div>

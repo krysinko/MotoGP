@@ -2,9 +2,9 @@
 
 <div class="row">
     <div class="col-xs-12 basicMargin">
-        <?php include("actions/showRider.php"); ?>
+        <?php include("../../controllers/riders/showRider.php"); ?>
         <br>
-        <a class="btn btn-default" href="addRider.php" role="button">Add rider</a>
+        <a class="btn btn-default" href="../../templates/riders/addRider.php" role="button">Add rider</a>
         <br>
 
     </div>

@@ -1,16 +1,16 @@
 
-<?php include("../header.php");?>
+<?php include("../../view/header.php"); ?>
 
 <div class="row">
     <div class="col-xs-10 col-md-offset-1">
         <br>
-        <?php include "actions/showRider.php"; ?>
+        <?php include "../../controllers/riders/showRider.php"; ?>
     </div>
 </div>
 
 <div class="row">
     <div class="col-xs-10 col-xs-offset-1">
-        <form action="actions/submitRider.php" method="post">
+        <form action="../../controllers/riders/submitRider.php" method="post">
             <div class="inputDiv">
            <span>
             Team name:
@@ -53,4 +53,4 @@
 </div>
 
 
-<?php include("../footer.php"); ?>
+<?php include("../../view/footer.php"); ?>
