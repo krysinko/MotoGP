@@ -25,14 +25,14 @@
                 Rider1
            </span>
 
-                <input name="rider1" list="riders" id="rider1" onchange="checkRidersName()" oninput="this.onchange()">
+                <input name="rider1" list="riders" id="rider1" onchange="checkRidersName()">
                 <?php include("../riders/chooseRider.php"); ?>
             </div>
             <div class="inputDiv">
            <span>
                 Rider2
            </span>
-                <input name="rider2" list="riders" id="rider2" onchange="checkRidersName()" oninput="this.onchange()">
+                <input name="rider2" list="riders" id="rider2" onchange="checkRidersName()">
                 <?php include("../riders/chooseRider.php"); ?>
             </div>
             <div class="inputDiv">

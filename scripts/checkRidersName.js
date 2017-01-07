@@ -1,14 +1,10 @@
-var rider1 = $("#rider1").valueOf();
-var rider2 = $("#rider2").valueOf();
-
-// rider1.addEventListener("input", checkRidersName());
-rider2.on("input", checkRidersName());
-
-console.log(rider1, rider2);
 function checkRidersName() {
-    console.log(rider1, rider2);
-    if (rider1 !== '' && (rider1 == rider2 )) {
+    $rider1 = $("#rider1").val();
+    $rider2 = $("#rider2").val();
+    if ($rider1 !== '' && ($rider1.trim() == $rider2.trim() )) {
         $error = "Rider1 is the same as Rider2!";
         window.alert($error);
+        $("#rider1").val("");
+        $("#rider2").val("");
     }
 }
