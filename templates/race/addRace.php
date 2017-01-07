@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-xs-10 col-md-offset-1">
         <br>
-        <?php include "../../controllers/riders/showRider.php"; ?>
+        <?php include "../../controllers/race/showRace.php"; ?>
     </div>
 </div>
 
@@ -17,7 +17,7 @@
         </span>
                 <input name="track" type="text" id="track">
                 <a class="btn btn-default" href="../tracks/addTrack.php" role="button">Add track</a>
-<!--                TODO: list of tracks-->
+                <!--                TODO: list of tracks-->
             </div>
             <div class="inputDiv">
                 <span>
@@ -55,3 +55,9 @@
                 <?php include("../../controllers/riders/chooseRider.php"); ?>
 
             </div>
+            <div>
+                <input class="btn btn-default" type="submit" value="Add race">
+            </div>
+        </form>
+    </div>
+</div>
