@@ -1,4 +1,4 @@
-function checkRidersName() {
+function teamNotDuplicateRiders() {
     $rider1 = $("#rider1").val();
     $rider2 = $("#rider2").val();
     if ($rider1 !== '' && ($rider1.trim() == $rider2.trim() )) {

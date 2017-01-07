@@ -25,14 +25,14 @@
                 Rider1
            </span>
 
-                <input name="rider1" list="riders" id="rider1" onchange="checkRidersName()">
+                <input name="rider1" list="riders" id="rider1" onchange="teamNotDuplicateRiders()">
                 <?php include("../../controllers/riders/chooseRider.php"); ?>
             </div>
             <div class="inputDiv">
            <span>
                 Rider2
            </span>
-                <input name="rider2" list="riders" id="rider2" onchange="checkRidersName()">
+                <input name="rider2" list="riders" id="rider2" onchange="teamNotDuplicateRiders()">
                 <?php include("../../controllers/riders/chooseRider.php"); ?>
             </div>
             <div class="inputDiv">
