@@ -1,15 +1,4 @@
-<?php
-$serverName = "localhost";
-$username = "root";
-$password = "";
-$dbName = "MotoGP";
-
-// Create connection
-$conn = new mysqli($serverName, $username, $password, $dbName);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+<?php include("../../dbConnection.php");
 
 $sql = "SELECT * from motogp.teams";
 $result = $conn->query($sql);

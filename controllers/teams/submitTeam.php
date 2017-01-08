@@ -1,15 +1,5 @@
-<?php
-$serverName = "localhost";
-$username = "root";
-$password = "";
-$dbName = "MotoGP";
+<?php include("../../dbConnection.php");
 
-// Create connection
-$conn = new mysqli($serverName, $username, $password, $dbName);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 $teamName = isset($_POST['teamName'])?$_POST['teamName']:'null';
 $rider1 = isset($_POST['rider1'])?$_POST['rider1']:'null';
@@ -28,8 +18,6 @@ if (!mysqli_query( $conn,$sql ))
 {
     echo("<br>Error description: " . mysqli_error($conn));
 }else echo "<br>dobrze jest";
-
-
 
 
 

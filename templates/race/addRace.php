@@ -1,4 +1,4 @@
-<script src="../../scripts/raceNotDuplicateWinners.js"></script>
+<script src="../../scripts/notDuplicateWinners.js"></script>
 <?php include("../../view/header.php"); ?>
 
 <div class="row">
@@ -10,7 +10,7 @@
 
 <div class="row">
     <div class="col-xs-10 col-xs-offset-1">
-        <form action="../../controllers/race/addRace.php" method="post">
+        <form action="../../controllers/race/submitRace.php" method="post">
             <div class="inputDiv">
            <span>
             Track name:

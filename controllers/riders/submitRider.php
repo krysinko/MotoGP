@@ -1,14 +1,5 @@
-<?php
-$serverName = "localhost";
-$username = "root";
-$password = "";
-$dbName = "motogp";
+<?php include("../../dbConnection.php");
 
-
-$conn = new mysqli($serverName, $username, $password, $dbName);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 //
 //$teamName = isset($_POST['teamName'])?$_POST['teamName']:'null';
 //$rider1 = isset($_POST['rider1'])?$_POST['rider1']:'null';

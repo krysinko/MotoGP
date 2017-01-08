@@ -1,11 +1,4 @@
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "motogp";
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+<?php include("../../dbConnection.php");
 
 $get = mysqli_query($conn, "SELECT Name FROM riders");
 ?>

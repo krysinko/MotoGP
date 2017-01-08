@@ -28,6 +28,7 @@
                 <span>
                     Record:
                                     </span>
+<!--                TODO: text - walidacja przez js: 00:00:000, tak samo dla track length i top speed.-->
                 <input name="record" id="record" type="text" placeholder="mm:ss:ms" maxlength="9" onchange="convertTime()">
             </div>
             <div class="inputDiv">
