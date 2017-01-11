@@ -1,5 +1,5 @@
 .basicMargin {
-    margin: 100px;
+    margin-bottom: 50px;
 }
 
 .inputDiv{
@@ -26,4 +26,8 @@
 
 .basicMargin .btn{
     width: 190px;
+}
+
+thead {
+    font-weight: 700;
 }
