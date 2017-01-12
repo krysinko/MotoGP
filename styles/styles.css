@@ -31,3 +31,23 @@
 thead {
     font-weight: 700;
 }
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    display: block;
+    background: #ffffff;
+}
+
+.nav li, .nav li a {
+    background-color: #ac0e35;
+    color: white;
+    font-weight: 700;
+}
+
+.nav li .active, .nav li .active a {
+    background-color: white;
+    color: #ac0e35;
+}

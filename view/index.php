@@ -21,17 +21,7 @@
 <div class="row">
     <div class="col-xs-10 col-xs-offset-1 basicMargin">
 
-        <a class="btn btn-default" href="teams/teams.php" role="button">Teams</a>
-        <a class="btn btn-default" href="riders/riders.php" role="button">Riders</a>
-        <a class="btn btn-default" href="worldchampion/worldchampion.php" role="button">World championship</a>
-        <a class="btn btn-default" href="tracks/tracks.php" role="button">Tracks</a>
-        <a class="btn btn-default" href="race/race.php" role="button">Races</a>
-        <br><br>
-        <a class="btn btn-default" href="../templates/teams/addTeam.php" role="button">Add team</a>
-        <a class="btn btn-default" href="../templates/riders/addRider.php" role="button">Add rider</a>
-        <a class="btn btn-default" href="../templates/worldchampion/addSeasonResults.php" role="button">Add season</a>
-        <a class="btn btn-default" href="../templates/riders/addRider.php" role="button">Add track</a>
-        <a class="btn btn-default" href="../templates/race/addRace.php" role="button">Add race</a>
+
     </div>
 </div>
 </body>

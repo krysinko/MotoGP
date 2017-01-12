@@ -8,7 +8,7 @@ $winner = isset($_POST['winner'])?$_POST['winner']:'null';
 $second = isset($_POST['second'])?$_POST['second']:'null';
 $third = isset($_POST['third'])?$_POST['third']:'null';
 
-$sql = "INSERT INTO worldchampion (Season, FactoryTeam, IndependentTeam, Manufacturer, RiderWC, Rider2ndWC, Rider3WC) VALUES ('$season', '$factory', '$independent', '$manufacturer', '$winner', '$second', '$third')";
+$sql = "INSERT INTO worldchampion (Season, FactoryTeam, IndependentTeam, Manufacturer, RiderWC, Rider2WC, Rider3WC) VALUES ('$season', '$factory', '$independent', '$manufacturer', '$winner', '$second', '$third')";
 echo($sql);
 if (!mysqli_query( $conn,$sql ))
 {

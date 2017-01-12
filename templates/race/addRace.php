@@ -15,9 +15,9 @@
            <span>
             Track name:
         </span>
-                <input name="track" type="text" id="track">
+                <?php include("../../controllers/tracks/chooseTrack.php"); ?>
+                <input name="track" type="text" id="track" list="track">
                 <a class="btn btn-default" href="../tracks/addTrack.php" role="button">Add track</a>
-                <!--                TODO: list of tracks-->
             </div>
             <div class="inputDiv">
                 <span>

@@ -25,43 +25,47 @@
 </head>
 <body>
 <div class="row">
-    <div class="col-xs-10 col-xs-offset-1 basicMargin">
-        <ul class="nav nav-tabs nav-justified" id="menu-list">
-            <li role="presentation" id="menu-home">
-                <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>/MotoGP/view/index.php">
-                    Home
-                </a>
-            </li>
-            <li role="presentation" id="menu-riders">
-                <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>/MotoGP/view/riders/riders.php">
-                    Riders
-                </a>
-            </li>
-            <li role="presentation" id="menu-teams">
-                <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>
+    <div class="col-xs-10 basicMargin">
+        <div class="menu-container">
+            <ul class="nav nav-tabs nav-justified" id="menu-list">
+                <li role="presentation" id="menu-home">
+                    <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>
+                    /MotoGP/view/index.php">
+                        Home
+                    </a>
+                </li>
+                <li role="presentation" id="menu-riders">
+                    <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>
+                    /MotoGP/view/riders/riders.php">
+                        Riders
+                    </a>
+                </li>
+                <li role="presentation" id="menu-teams">
+                    <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>
                 /MotoGP/view/teams/teams.php">
-                    Teams
-                </a>
-            </li>
-            <li role="presentation" id="menu-wc">
-                <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>
+                        Teams
+                    </a>
+                </li>
+                <li role="presentation" id="menu-wc">
+                    <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>
                 /MotoGP/view/worldchampion/worldchampion.php">
-                    World championship
-                </a>
-            </li>
-            <li role="presentation" id="menu-tracks">
-                <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>
+                        World championship
+                    </a>
+                </li>
+                <li role="presentation" id="menu-tracks">
+                    <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>
                 /MotoGP/view/tracks/tracks.php">
-                    Tracks
-                </a>
-            </li>
-            <li role="presentation" id="manu-races">
-                <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>
+                        Tracks
+                    </a>
+                </li>
+                <li role="presentation" id="manu-races">
+                    <a href="<?php $_SERVER['DOCUMENT_ROOT']; ?>
                 /MotoGP/view/race/race.php">
-                    Races
-                </a>
-            </li>
-        </ul>
+                        Races
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 
