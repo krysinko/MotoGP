@@ -20,7 +20,7 @@
 <body>
 <div class="row">
     <div class="col-xs-10 col-xs-offset-1 basicMargin">
-
+        <img class="front-picture" src="../images/riders16.jpg">
 
     </div>
 </div>

@@ -3,9 +3,7 @@
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1 basicMargin">
 
-            <br>
-            <a class="btn btn-default" href="../../templates/tracks/addTrack.php" role="button">Add track</a>
-            <br>
+
             <div class="panel panel-default">
                 <table class="table">
                     <thead>
@@ -32,6 +30,9 @@
                     </tbody>
                 </table>
             </div>
+            <br>
+            <a class="btn btn-default" href="../../templates/tracks/addTrack.php" role="button">Add track</a>
+            <br>
         </div>
     </div>
 

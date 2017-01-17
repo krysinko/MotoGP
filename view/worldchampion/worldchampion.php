@@ -2,8 +2,7 @@
 
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1 basicMargin">
-            <br>
-            <a class="btn btn-default" href="../../templates/worldchampion/addSeasonResults.php" role="button">Add season results</a>
+
             <div class="panel panel-default">
                 <table class="table">
                 <thead>
@@ -36,6 +35,8 @@
                 </tbody>
                 </table>
             </div>
+            <br>
+            <a class="btn btn-default" href="../../templates/worldchampion/addSeasonResults.php" role="button">Add season results</a>
         </div>
     </div>
 

@@ -2,13 +2,6 @@
 <?php include("../../view/header.php"); ?>
 
 <div class="row">
-    <div class="col-xs-10 col-md-offset-1">
-        <br>
-        <?php include "../../controllers/tracks/showTrack.php"; ?>
-    </div>
-</div>
-
-<div class="row">
     <div class="col-xs-10 col-xs-offset-1">
         <form action="../../controllers/tracks/submitTrack.php" method="post">
             <div class="inputDiv">

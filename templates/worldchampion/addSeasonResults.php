@@ -3,13 +3,6 @@
 <?php include("../../view/header.php"); ?>
 
 <div class="row">
-    <div class="col-xs-10 col-md-offset-1">
-        <br>
-        <?php include "../../controllers/worldchampion/showWC.php"; ?>
-    </div>
-</div>
-
-<div class="row">
     <div class="col-xs-10 col-xs-offset-1">
         <form action="../../controllers/worldchampion/submitWC.php" method="post">
             <div class="inputDiv">

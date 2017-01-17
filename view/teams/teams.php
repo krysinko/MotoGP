@@ -2,10 +2,7 @@
 
 <div class="row">
     <div class="col-xs-10 col-xs-offset-1 basicMargin">
-        <br>
-        <a class="btn btn-default" href="../../templates/teams/addTeam.php" role="button">Add team</a>
-
-        <div class="panel panel-default">
+ <div class="panel panel-default">
             <table class="table">
                 <thead>
                 <tr>
@@ -21,6 +18,7 @@
                     <td>
                         Factory/Independent
                     </td>
+                    <td></td>
                 </tr>
                 </thead>
                 <tbody>
@@ -28,6 +26,9 @@
                 </tbody>
             </table>
         </div>
+
+        <br>
+        <a class="btn btn-default" href="../../templates/teams/addTeam.php" role="button">Add team</a>
 
 
     </div>

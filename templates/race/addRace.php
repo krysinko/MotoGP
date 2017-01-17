@@ -2,13 +2,6 @@
 <?php include("../../view/header.php"); ?>
 
 <div class="row">
-    <div class="col-xs-10 col-md-offset-1">
-        <br>
-        <?php include "../../controllers/race/showRace.php"; ?>
-    </div>
-</div>
-
-<div class="row">
     <div class="col-xs-10 col-xs-offset-1">
         <form action="../../controllers/race/submitRace.php" method="post">
             <div class="inputDiv">
@@ -31,6 +24,7 @@
                 </span>
                 <input name="winner" list="riders" id="winner" onchange="raceNotDuplicateWinners()">
                 <?php include("../../controllers/riders/chooseRider.php"); ?>
+                <a class="btn btn-default" href="../riders/addRider.php" role="button">Add rider</a>
 
             </div>
             <div class="inputDiv">

@@ -3,9 +3,6 @@
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1 basicMargin">
 
-            <br>
-            <a class="btn btn-default" href="../../templates/race/addRace.php" role="button">Add race</a>
-            <br>
             <div class="panel panel-default">
                 <table class="table">
                     <thead>
@@ -28,6 +25,7 @@
                         <td>
                             Pole
                         </td>
+                        <td></td>
                     </tr>
                     </thead>
                     <tbody>
@@ -35,6 +33,10 @@
                     </tbody>
                 </table>
             </div>
+
+
+            <br>
+            <a class="btn btn-default" href="../../templates/race/addRace.php" role="button">Add race</a>
         </div>
     </div>
 
