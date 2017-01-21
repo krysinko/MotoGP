@@ -11,10 +11,7 @@ if ($result->num_rows > 0) {
             . "</td><td> " . $row["Winner"]
             . "</td><td> " . $row["Second place"]
             . "</td><td> " . $row["Third place"]
-            . "</td><td> " . $row["Pole"]. "</td>".
-//            <td>
-//            <a href='updateRace.php'>update</a></td>
-."</tr>";
+            . "</td><td> " . $row["Pole"]. "</td>"."</tr>";
     }
 } else {
     echo "0 results";

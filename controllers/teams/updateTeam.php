@@ -1,47 +1,63 @@
 <?php
-$teamName=http_get('http://localhost/MotoGP/view/teams/teams.php');
-$rider2=$_GET['Rider2'];
-$isFactory=$_GET['http://localhost/MotoGP/view/teams/teams.php'];
-include("../header.php");
-include("../../dbConnection.php");
+include($_SERVER['DOCUMENT_ROOT'] . "view/header.php");
+include($_SERVER['DOCUMENT_ROOT'] . "dbConnection.php");
+
+$team = new team();
+
+$teamName = urldecode($_GET[$argv[0]]);
+$rider2 = urldecode($_GET[$argv[1]]);
+$rider2 = urldecode($_GET[$argv[2]]);
+$isFactory = urldecode($_GET[$argv[3]]);
 
 
-
-echo($teamName . $rider1 . $rider2 . $isFactory );
+echo($teamName . $rider2 . $isFactory);
 ?>
 
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1 basicMargin">
             <div class="panel panel-default">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <td>
-                            Team
-                        </td>
-                        <td>
-                            Rider1
-                        </td>
-                        <td>
-                            Rider2
-                        </td>
-                        <td>
-                            Factory/Independent
-                        </td>
-                        <td></td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <?php include "../../controllers/teams/showTeam.php"; ?>
-                    </tbody>
-                </table>
+                <form action="../../controllers/teams/submitTeam.php" method="post">
+                    <div class="inputDiv">
+           <span>
+            Team name:
+        </span>
+                        <input name="teamName" type="text" id="teamName">
+                    </div>
+                    <div class="inputDiv">
+           <span>
+                Rider1
+           </span>
+
+                        <input name="rider1" list="riders" id="rider1" onchange="teamNotDuplicateRiders()">
+                        <?php include("../../controllers/riders/chooseRider.php"); ?>
+                    </div>
+                    <div class="inputDiv">
+           <span>
+                Rider2
+           </span>
+                        <input name="rider2" list="riders" id="rider2" onchange="teamNotDuplicateRiders()">
+                        <?php include("../../controllers/riders/chooseRider.php"); ?>
+                    </div>
+                    <div class="inputDiv">
+           <span>
+                Is the team factory?
+           </span>
+                        <select name="isFactory" id="isFactory">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="btn btn-default" type="submit" value="update team">
+                    </div>
+                </form>
             </div>
 
             <br>
-            <a class="btn btn-default" href="../../templates/teams/addTeam.php" role="button">Add team</a>
+            <a class="btn btn-default" href="../../controllers/teams/updateRequest.php" role="button">Update team</a>
 
 
         </div>
     </div>
 
-<?php include("../footer.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . "/MotoGP/view/footer.php");; ?>
