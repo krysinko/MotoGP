@@ -13,6 +13,7 @@ $number = isset($_POST['number'])?$_POST['number']:'null';
 $country = isset($_POST['country'])?$_POST['country']:'null';
 $category = isset($_POST['category'])?$_POST['category']:'null';
 
+
 $sql = "INSERT INTO riders (Team, Name, Number, Country, Category) VALUES ( '$teamName', '$riderName', '$number','$country', '$category')";
 echo($sql);
 if (!mysqli_query( $conn,$sql ))
@@ -26,19 +27,7 @@ if (!mysqli_query( $conn,$sql ))
 
 
 $result = $conn->query($sql);
-//echo "Entered data successfully\n";
 
-/*if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        echo "<b>Team: </b>" . $row["Team"];
-        echo " - <b>Riders name: </b>" . $row["Name"];
-        echo " - <b>Category:</b> " . $row["Category"] . "<br>";
-
-    }
-} else {
-    echo "0 results";
-}
-*/
 
 $conn->close();
 ?>

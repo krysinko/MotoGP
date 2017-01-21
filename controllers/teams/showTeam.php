@@ -15,6 +15,7 @@ if ($result->num_rows > 0) {
         $teamName = $row["teamName"];
         $rider1 = $row["Rider1"];
         $rider2 = $row["Rider2"];
+        $id=$row["id"];
 
         echo
             "<tr><td>" . $row["teamName"]
@@ -22,7 +23,7 @@ if ($result->num_rows > 0) {
             . "</td><td> " . $row["Rider2"]
             . "</td><td> " . $factory
             . "</td><td>
-    <a href='updateTeam.php?$teamName+$rider1+$rider2+$isFactory'>
+    <a href='../../controllers/teams/updateTeam.php?teamName=$teamName&rider1=$rider1&rider2=$rider2&isFactory=$isFactory&id=$id'>
         update</a></td>
             </tr>";
     }

@@ -1,60 +1,66 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . "view/header.php");
-include($_SERVER['DOCUMENT_ROOT'] . "dbConnection.php");
+include("../../view/header.php");
+include("../dbConnection.php");
 
 $team = new team();
 
-$teamName = urldecode($_GET[$argv[0]]);
-$rider2 = urldecode($_GET[$argv[1]]);
-$rider2 = urldecode($_GET[$argv[2]]);
-$isFactory = urldecode($_GET[$argv[3]]);
+$teamName = $_GET['teamName'];
+$rider1 = $_GET['rider1'];
+$rider2 = $_GET['rider2'];
+$isFactory = $_GET['isFactory'];
+$id=$_GET['id'];
 
 
-echo($teamName . $rider2 . $isFactory);
+echo($teamName ."   " . $rider1 ."   "  . $rider2 ."   "  . $isFactory ."   " . $id);
 ?>
 
     <div class="row">
         <div class="col-xs-10 col-xs-offset-1 basicMargin">
-            <div class="panel panel-default">
-                <form action="../../controllers/teams/submitTeam.php" method="post">
+                <form action="../teams/updateRequest.php?id=<?php echo $id; ?>" method="post">
                     <div class="inputDiv">
-           <span>
-            Team name:
-        </span>
-                        <input name="teamName" type="text" id="teamName">
-                    </div>
-                    <div class="inputDiv">
-           <span>
-                Rider1
-           </span>
+                    <span>
+                    Team name:
+                    </span>
 
-                        <input name="rider1" list="riders" id="rider1" onchange="teamNotDuplicateRiders()">
+                        <input name="teamName" type="text" id="teamName"
+                               value="<?php echo $teamName ?>">
+                    </div>
+
+                    <div class="inputDiv">
+                    <span>
+                        Rider1
+                    </span>
+
+                        <input name="rider1" list="riders" id="rider1" onchange="teamNotDuplicateRiders()"
+                               value="<?php echo $rider1 ?>">
                         <?php include("../../controllers/riders/chooseRider.php"); ?>
                     </div>
+
                     <div class="inputDiv">
-           <span>
-                Rider2
-           </span>
-                        <input name="rider2" list="riders" id="rider2" onchange="teamNotDuplicateRiders()">
+                    <span>
+                        Rider2
+                    </span>
+                        <input name="rider2" list="riders" id="rider2" onchange="teamNotDuplicateRiders()"
+                               value="<?php echo $rider2 ?>">
                         <?php include("../../controllers/riders/chooseRider.php"); ?>
                     </div>
+
                     <div class="inputDiv">
-           <span>
-                Is the team factory?
-           </span>
-                        <select name="isFactory" id="isFactory">
+                    <span>
+                        Is the team factory?
+                    </span>
+                        <select name="isFactory" id="isFactory"
+                                value="<?php echo $isFactory ?>">
                             <option value="0">No</option>
                             <option value="1">Yes</option>
                         </select>
                     </div>
                     <div>
-                        <input class="btn btn-default" type="submit" value="update team">
+                        <input class="btn btn-default" type="submit" value="Update team">
                     </div>
                 </form>
-            </div>
 
             <br>
-            <a class="btn btn-default" href="../../controllers/teams/updateRequest.php" role="button">Update team</a>
 
 
         </div>

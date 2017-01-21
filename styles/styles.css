@@ -59,3 +59,11 @@ thead {
 .front-picture {
     width: 100%;
 }
+
+
+body {
+    font-weight: 700;
+    background: url(../images/maxresdefault22.jpg) no-repeat center;
+    background-size: 100%;
+
+}
