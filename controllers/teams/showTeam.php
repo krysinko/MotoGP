@@ -24,7 +24,9 @@ if ($result->num_rows > 0) {
             . "</td><td> " . $factory
             . "</td><td>
     <a href='../../controllers/teams/updateTeam.php?teamName=$teamName&rider1=$rider1&rider2=$rider2&isFactory=$isFactory&id=$id'>
-        update</a></td>
+        update</a></td> <td>"
+            . "<a href='../../controllers/teams/removeTeam.php?id=$id'>
+            remove</a></td>
             </tr>";
     }
 } else {

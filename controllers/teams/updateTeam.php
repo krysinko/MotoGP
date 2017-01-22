@@ -9,9 +9,6 @@ $rider1 = $_GET['rider1'];
 $rider2 = $_GET['rider2'];
 $isFactory = $_GET['isFactory'];
 $id=$_GET['id'];
-
-
-echo($teamName ."   " . $rider1 ."   "  . $rider2 ."   "  . $isFactory ."   " . $id);
 ?>
 
     <div class="row">
