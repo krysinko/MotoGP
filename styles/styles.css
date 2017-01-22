@@ -1,5 +1,6 @@
 .basicMargin {
     margin-bottom: 50px;
+    margin-top: 15px;
 }
 
 .inputDiv{
@@ -56,6 +57,21 @@ thead {
     background-color:  #7d1111 !important;
 }
 
+.nav li .dropdown-menu, .nav li .dropdown-menu li a{
+    background-color: white;
+    color: #ac0e35;
+    font-weight: 600;
+}
+
+.nav li .dropdown-menu li{
+    border-bottom:1px solid #7d1111;
+    margin: 0 10px 0 10px;
+}
+
+.nav li .dropdown-menu li:last-child {
+    border-bottom: none;
+
+}
 .front-picture {
     width: 100%;
 }
@@ -65,5 +81,8 @@ body {
     font-weight: 700;
     background: url(../images/maxresdefault22.jpg) no-repeat center;
     background-size: 100%;
+}
 
+.error {
+    padding: 30px;
 }

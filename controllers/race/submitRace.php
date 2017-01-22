@@ -1,6 +1,13 @@
 <?php include("../../dbConnection.php");
+include("../../view/header.php"); ?>
 
-$trackName = isset($_POST['track'])?$_POST['track']:'null';
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 basicMargin">
+
+            <div class="panel panel-default error">
+                <?php
+
+                $trackName = isset($_POST['track'])?$_POST['track']:'null';
 $winner = isset($_POST['winner'])?$_POST['winner']:'null';
 $season = isset($_POST['season'])?$_POST['season']:'null';
 $second = isset($_POST['second'])?$_POST['second']:'null';
@@ -21,3 +28,8 @@ $result = $conn->query($sql);
 
 $conn->close();
 ?>
+    </div>
+    </div>
+    </div>
+
+<?php include("../../view/footer.php"); ?>

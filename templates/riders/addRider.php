@@ -39,6 +39,7 @@
                 </select>
             </div>
             <div>
+                <br>
                 <input class="btn btn-default" type="submit" value="Add rider">
             </div>
         </form>

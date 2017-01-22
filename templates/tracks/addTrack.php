@@ -16,6 +16,8 @@
                 </span>
                 <input name="winner" list="riders" id="winner">
                 <?php include("../../controllers/riders/chooseRider.php"); ?>
+
+                <a class="btn btn-default" href="../riders/addRider.php" role="button">Add rider</a>
             </div>
             <div class="inputDiv">
                 <span>
@@ -37,6 +39,7 @@
                 <input name="speed"  id="speed" type="number" value="320">
             </div>
             <div>
+                <br>
                 <input class="btn btn-default" type="submit" value="Add track">
             </div>
         </form>

@@ -1,4 +1,11 @@
-<?php include('../dbConnection.php');
+<?php include("../../dbConnection.php");
+include("../../view/header.php"); ?>
+
+    <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 basicMargin">
+
+            <div class="panel panel-default error">
+<?php
 
 $teamName = isset($_POST['teamName']) ? $_POST['teamName'] : 'null';
 $rider1 = isset($_POST['rider1']) ? $_POST['rider1'] : 'null';
@@ -17,3 +24,9 @@ $result = $conn->query($sql);
 
 $conn->close();
 ?>
+
+            </div>
+        </div>
+    </div>
+
+<?php include("../../view/footer.php"); ?>

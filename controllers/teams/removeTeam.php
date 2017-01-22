@@ -1,4 +1,11 @@
 <?php include('../dbConnection.php');
+include("../../view/header.php");  ?>
+
+<div class="row">
+    <div class="col-xs-10 col-xs-offset-1 basicMargin">
+
+        <div class="panel panel-default error">
+<?php
 
 $id = $_GET['id'];
 
@@ -12,3 +19,9 @@ $result = $conn->query($sql);
 
 $conn->close();
 ?>
+
+</div>
+</div>
+</div>
+
+<?php include("../../view/footer.php"); ?>

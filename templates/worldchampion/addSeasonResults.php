@@ -18,6 +18,8 @@
                 <?php include("../../controllers/teams/chooseTeam.php"); ?>
                 <input name="factory" list="factory" id="factory">
 
+                <a class="btn btn-default" href="../teams/addTeam.php" role="button">Add team</a>
+
             </div>
             <div class="inputDiv">
                 <span>
@@ -39,6 +41,8 @@
                 </span>
                 <input name="winner" list="riders" id="winner" onchange="raceNotDuplicateWinners()">
                 <?php include("../../controllers/riders/chooseRider.php"); ?>
+
+                <a class="btn btn-default" href="../riders/addRider.php" role="button">Add rider</a>
             </div>
             <div class="inputDiv">
                 <span>
@@ -55,6 +59,7 @@
                 <?php include("../../controllers/riders/chooseRider.php"); ?>
             </div>
             <div>
+                <br>
                 <input class="btn btn-default" type="submit" value="Add results">
             </div>
         </form>

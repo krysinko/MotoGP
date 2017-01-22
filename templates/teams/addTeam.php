@@ -20,6 +20,8 @@
 
                 <input name="rider1" list="riders" id="rider1" onchange="teamNotDuplicateRiders()">
                 <?php include("../../controllers/riders/chooseRider.php"); ?>
+
+                <a class="btn btn-default" href="../riders/addRider.php" role="button">Add rider</a>
             </div>
             <div class="inputDiv">
            <span>
@@ -38,6 +40,7 @@
                 </select>
             </div>
             <div>
+                <br>
                 <input class="btn btn-default" type="submit" value="Add team">
             </div>
         </form>

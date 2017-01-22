@@ -53,6 +53,7 @@ $id=$_GET['id'];
                         </select>
                     </div>
                     <div>
+                        <br>
                         <input class="btn btn-default" type="submit" value="Update team">
                     </div>
                 </form>
